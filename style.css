@@ -1,0 +1,148 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-line-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    position: relative; /* Needed for absolute positioning of canvas */
+    overflow-x: hidden; /* Prevent horizontal scrollbar from canvas */
+}
+
+#particle-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send to background */
+}
+
+/* Header Styles */
+header {
+    background: #000; /* Black header */
+    color: #ff00ff; /* Fuchsia text */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content Area */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Hero Section */
+.hero {
+    background: #ff00ff; /* Fuchsia background */
+    color: #000; /* Black text */
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.hero h2 {
+    margin-top: 0;
+}
+
+/* Game Showcase Section */
+.game-showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for games */
+    gap: 30px;
+    margin-bottom: 30px;
+    text-align: center; /* Center the h2 title */
+}
+
+.game-showcase h2 {
+    grid-column: 1 / -1; /* Make the h2 span all columns */
+    text-align: center;
+}
+
+.game-card {
+    background: #000; /* Black background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.game-card h3 {
+    color: #ff00ff; /* Fuchsia text */
+    margin-top: 0;
+}
+
+.game-card .game-demo {
+    margin-top: 15px;
+    height: 300px; /* Fixed height for game demos */
+    background: #333; /* Darker placeholder background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: #ccc;
+    border: 1px solid #ff00ff; /* Fuchsia border */
+    border-radius: 4px;
+    overflow: hidden; /* Ensures iframe content stays within bounds */
+}
+
+.game-card .game-demo iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove default iframe border */
+}
+
+.game-card .instructions {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Contact Info Section */
+.contact-info {
+    text-align: center;
+    padding: 30px 20px;
+    background: #000; /* Black background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.contact-info a {
+    color: #ff00ff; /* Fuchsia link */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000; /* Black footer */
+    color: #ff00ff; /* Fuchsia text */
+    margin-top: 30px;
+}

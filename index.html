@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameDev Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+    <header>
+        <h1>My Game Development Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#games">My Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="hero">
+            <h2>Welcome to My World of Games!</h2>
+            <p>I'm a passionate game developer specializing in browser-based experiences using HTML, CSS, and JavaScript/TypeScript. I'm excited to bring some of my games to Steam soon! Explore my projects below.</p>
+        </section>
+
+        <section id="games" class="game-showcase">
+            <h2>Projects Generated About My Projects</h2>
+
+            <div class="game-card">
+                <h3>Disinfo.exe</h3>
+                <p class="game-description">Disinfo.exe is a unique terminal-style game where you interact with a friend, navigating a narrative that spirals into intrigue and mystery. Experience a compelling story driven by your choices and conversations.</p>
+                <div class="game-demo">
+                    <iframe src="./games/game1/index.html" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p class="instructions">To integrate your game, replace the contents of `games/game1/index.html` with your game's HTML structure, and add any necessary CSS and JavaScript files in that directory.</p>
+            </div>
+
+            <div class="game-card">
+                <h3>Unnamed Roguelite (Placeholder)</h3>
+                <p class="game-description">This roguelite game features a challenging Souls-like leveling system, offering deep progression and replayability. Each run presents new tactical decisions and opportunities to grow your character.</p>
+                <div class="game-demo">
+                    <iframe src="./games/game2/index.html" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p class="instructions">To integrate your game, replace the contents of `games/game2/index.html` with your game's HTML structure, and add any necessary CSS and JavaScript/TypeScript files in that directory.</p>
+            </div>
+
+            <div class="game-card">
+                <h3>Game Title 3 (Placeholder)</h3>
+                <p class="game-description">A brief description of your third game. This project is a placeholder for your future game development endeavors.</p>
+                <div class="game-demo">
+                    <iframe src="./games/game3/index.html" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p class="instructions">To replace this placeholder, update the `src` attribute of the iframe to point to your game's `index.html` file within the `games/game3` directory.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>Feel free to reach out anytime on email or Discord about partnering or collaborating for a game!</p>
+            <p>Email: KitsuneTechnologyLLC@pm.me</p>
+            <p>Discord: SpookyMoo</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kitsune Technology LLC. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
